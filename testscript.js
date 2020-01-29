@@ -1,8 +1,43 @@
-let testPerson = {
-  name: 'Jem',
-  employeeNumber: '62347',
-  annualSalary: '63500',
-  reviewRating: 4
+const employees = [
+    {
+        name: 'Atticus',
+        employeeNumber: '2405',
+        annualSalary: '47000',
+        reviewRating: 3
+    },
+    {
+        name: 'Jem',
+        employeeNumber: '62347',
+        annualSalary: '63500',
+        reviewRating: 4
+    },
+    {
+        name: 'Scout',
+        employeeNumber: '6243',
+        annualSalary: '74750',
+        reviewRating: 5
+    },
+    {
+        name: 'Robert',
+        employeeNumber: '26835',
+        annualSalary: '66000',
+        reviewRating: 1
+    },
+    {
+        name: 'Mayella',
+        employeeNumber: '89068',
+        annualSalary: '35000',
+        reviewRating: 1
+    }
+];
+
+
+
+
+
+
+for (let i = 0; i < employees.length; i++) {
+   console.log(test(employees[i]));
 }
 
 function test(person) {
@@ -18,7 +53,7 @@ function test(person) {
     //check employee ID
     else {if (person.employeeNumber<=9999){
             //this is a old employee.
-            if (employee.salary>65000){
+            if (person.salary>65000){
                 if (person.reviewRating == 3) {
                     newperson.name = person.name;
                         newperson.bonusPercentage = 8;
