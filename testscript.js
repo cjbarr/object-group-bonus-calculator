@@ -1,8 +1,8 @@
 let testPerson = {
-    name: 'Mayella',
-    employeeNumber: '89068',
-    annualSalary: '35000',
-    reviewRating: 1
+  name: 'Jem',
+  employeeNumber: '62347',
+  annualSalary: '63500',
+  reviewRating: 4
 }
 
 function test(person) {
@@ -16,7 +16,7 @@ function test(person) {
         return newperson
     }
     //check employee ID
-    else if(employeeid<=9999){
+    else {if (person.employeeNumber<=9999){
             //this is a old employee.
             if (employee.salary>65000){
                 if (person.reviewRating == 3) {
@@ -41,7 +41,7 @@ function test(person) {
                     return newperson
                 }
             }
-        
+
             else{
                 if (person.reviewRating == 3) {
                     newperson.name = person.name;
@@ -65,9 +65,9 @@ function test(person) {
                     return newperson
                 }
             }
-
-    else if(employeeNumber>9999){
-                if (employee.salary > 65000){
+}
+if(person.employeeNumber>9999){
+                if (person.salary > 65000){
                      if (person.reviewRating == 3) {
                     newperson.name = person.name;
                         newperson.bonusPercentage = 3;
@@ -90,7 +90,7 @@ function test(person) {
                     return newperson
                 }
             }
-            
+
                 else {
                         if (person.reviewRating == 3) {
                         newperson.name = person.name;
@@ -119,6 +119,6 @@ function test(person) {
 
 
         }
-    
+
     }
 }
